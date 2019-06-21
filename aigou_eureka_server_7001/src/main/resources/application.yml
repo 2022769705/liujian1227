@@ -1,0 +1,13 @@
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: web
+  client:
+    register-with-eureka: false #禁止 服务端自己注册自己
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7001/eureka/ #注册中心地址
+spring:
+  application:
+    name: AIGOU_EUREKA  #ctrl+ shift +x 大小写转换
